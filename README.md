@@ -46,4 +46,40 @@ After installing all the themes, follow these steps:
 3. Set the "Mouse Pointer" theme to Catppuccin Macchiato Dark.
 4. Set the "Icons" theme to Tela Circle Nord.
 
+### Wallpaper
+For this section you can use any wallpaper you like. I personally use a custom wallpaper that matches the Catppuccin Macchiato theme. I have used [this wallpaper](https://raw.githubusercontent.com/orangci/walls-catppuccin-mocha/master/purpled-night.jpg). You can find various wallpapers on the following github repositories.
+- [orangci/walls-catppuccin-mocha](https://github.com/orangci/walls-catppuccin-mocha)
+- [zhichaoh/catppuccin-wallpapers](https://github.com/zhichaoh/catppuccin-wallpapers)
 
+
+## QtTheme
+It is necessary to install as many apps do not support GTK themes. To do this properly you have to install multiple packages. Here are the steps:
+1. Open a terminal and run the following command:
+   ```bash
+   sudo apt install qt5ct qt6ct qt5-style-plugins qt6-style-plugins kvantum qt5-style-kvantum qt6-style-kvantum
+   ```
+2. After installation, open write the following command in the terminal:
+   ```bash
+   sudo xed ~/.profile
+   ```
+3. Add the following lines to the end of the file:
+   ```bash
+   export QT_QPA_PLATFORMTHEME=qt5ct
+   export QT_STYLE_OVERRIDE=kvantum
+   ```
+4. Save the file and close it.
+5. Run the following command to apply the changes:
+   ```bash
+   source ~/.profile
+   ```
+6. Open the browser and go to [this link](https://github.com/catppuccin/Kvantum). From there download the catppuccin-macchiato-blue theme.
+
+7. After downloading all the files from there just create a folder and place all the files in it. 
+
+8. After that open the kvantum manager and select the folder you created as the theme folder then install the theme.
+
+9. After that go to Change/Delete Theme and select the Catppuccin Macchiato or whatever you named the theme.
+
+10. You can also change the theme by color by going to the qt5 and selecting the kvantum theme, but it is not necessary.
+
+11. Restart your computer to apply the changes.

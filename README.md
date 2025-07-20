@@ -118,3 +118,16 @@ To apply the Catppuccin Macchiato theme to Flatpak applications, you need to ins
 ![Flatseal Settings](image/flatseal/flatseal.png)
 
 9. Now you can close the `flatseal` application and restart your computer to apply the changes.
+
+## Gnome Terminal
+To apply the Catppuccin Macchiato theme to Gnome Terminal, follow these steps:   
+1. Downolad the `terminal.txt` file from this repository.
+2. Open the Terminal and paste the following command:
+   ```bash
+   dconf load /org/gnome/terminal/ < terminal.txt
+   ```
+3. Then go to the preferences and select the `Catppuccin Macchiato` profile.
+![Terminal Settings](image/terminal/terminal_text.png)
+
+4. I have also modified transparent settings, so you can adjust the transparency level according to your preference.
+![Terminal Settings](image/terminal/terminal_color.png)
